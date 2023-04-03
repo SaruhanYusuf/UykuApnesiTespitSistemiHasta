@@ -15,27 +15,41 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
-            android:id="@+id/mailbelirlemekutusu"
+            android:id="@+id/MailKutusu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="40dp"
+            android:inputType="textEmailAddress"
             android:hint="Mailinizi Giriniz:" />
 
         <EditText
-            android:id="@+id/sifrebelirlemekutus"
+            android:id="@+id/SifreKutusu"
             android:layout_margin="40dp"
+            android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Şifrenizi Giriniz:" />
 
         <Button
-            android:id="@+id/UyeOlButton"
+            android:id="@+id/GirisButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
             android:text="Giriş Yap" />
 
+
+        <TextView
+            android:id="@+id/KayitOlmadinizMi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hala Kayıt Olmadınız Mı?"
+            android:layout_gravity="center"
+            android:textColor="@color/blue"
+            android:clickable="true"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            />
 
 
     </LinearLayout>

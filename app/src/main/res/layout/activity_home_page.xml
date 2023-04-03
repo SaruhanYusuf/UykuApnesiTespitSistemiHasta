@@ -1,66 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomePageActivity">
+    android:orientation="vertical"
+    tools:context=".HomePageActivity"
+    tools:ignore="SpeakableTextPresentCheck">
 
 
-    <ScrollView
-        android:id="@+id/ScrollView01"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/KirmiziBilgiKutusu"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginVertical="20dp"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="#FF0000"
+            android:orientation="vertical"
+            app:cardCornerRadius="10dp" />
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/MaviBilgiKutusu"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginVertical="20dp"
+            android:backgroundTint="#87CEFA"
+            android:orientation="vertical"
+            app:cardCornerRadius="10dp" />
 
-            <LinearLayout
+        <androidx.cardview.widget.CardView
+            android:id="@+id/TuruncuBilgiKutusu"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginVertical="20dp"
+            android:backgroundTint="#FFA500"
+            android:orientation="vertical"
+            app:cardCornerRadius="10dp" />
 
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginTop="100dp"
-                android:background="#FF0000"
-                android:orientation="vertical"
-                android:radius="10dp" />
-
-            <LinearLayout
-
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginTop="350dp"
-                android:background="#87CEFA"
-                android:orientation="vertical"
-                android:radius="10dp" />
-
-            <LinearLayout
-
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginTop="600dp"
-                android:background="#FFA500"
-                android:orientation="vertical"
-                android:radius="10dp" />
-
-            <LinearLayout
-
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginTop="850dp"
-                android:background="#8FBC8F"
-                android:orientation="vertical"
-                android:radius="10dp" />
-
-
-        </RelativeLayout>
-
-
-    </ScrollView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/YesilBilgiKutusu"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginVertical="20dp"
+            android:layout_marginTop="850dp"
+            android:backgroundTint="#8FBC8F"
+            android:orientation="vertical"
+            app:cardCornerRadius="10dp" />
+    </LinearLayout>
+</ScrollView>
 
 
 
-
-</LinearLayout>
