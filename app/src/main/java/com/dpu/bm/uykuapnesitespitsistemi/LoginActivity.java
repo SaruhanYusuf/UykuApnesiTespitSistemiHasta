@@ -67,7 +67,6 @@ public class LoginActivity extends AppCompatActivity {
                                         FirebaseUser user = mAuth.getCurrentUser();
                                         startActivity(new Intent(LoginActivity.this,HomePageActivity.class));
                                         finish();
-
                                     } else {
                                         // If sign in fails, display a message to the user.
                                         Log.e("Başarısız", "signInWithEmail:failure");
@@ -81,14 +80,9 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
-
         halaKayitOlmadinizMi.setOnClickListener(view -> {
             startActivity(new Intent(getApplicationContext(),MainActivity.class));
         });
-
-
-
-
     }
     @Override
     public void onStart() {
